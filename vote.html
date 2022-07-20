@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote | Pan African International</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="icon" href="./images/logo1.png" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/votes.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <div class="logo">
+            <img src="./images/logo1.png" alt="">
+        </div>
+        <h1>Pan African International</h1>
+        <div class="navbar-links" id="navLinks">
+            <i class="las la-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="awards.html">Awards/Conferences</a></li>
+                <li><a href="panafricantv.html">Pan African TV</a></li>
+                <li><a href="vote.html">Vote Now</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <!-- <li><a href="#careers">Careers</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- <i class="las la-bars" onclick="showMenu()"></i> -->
+
+        </div>
+        <i class="las la-bars" onclick="showMenu()"></i>
+    </div>
+    
+
+    <!-- <div class="sub-hero">
+        <div class="text-box">
+            <h1>Contact Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum repudiandae distinctio totam laudantium, <br> dignissimos sapiente id neque doloremque quidem?</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </div> -->
+
+    <div class="vote-title">
+        <h1 style="margin-bottom: 20px;">Vote Now!</h1>
+        <p>The Nomination for the 10<sup>th</sup> Pan African International Annual Conference and Awards 2022 is Open <br><br></p>
+        <p>Vote Using the steps below:</p>
+    </div>
+
+    <!-------------- contact us ------------->
+
+    <div class="form-page">
+        <form action="vote-handler.php" method="post" id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name"></label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Nominees" required>
+            </div>
+
+            <div class="form-group">
+                <label id="name-label" for="name"></label>
+                <input type="text" name="organization" id="name" class="form-control" placeholder="Organization" required>
+            </div>
+
+            <!-- <div class="form-group">
+                <label id="phone-label" for="phone"></label>
+                <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email"></label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Email Address" required>
+            </div> -->
+
+            <div class="form-group">
+                <!-- <p style="margin-bottom: 20px;">Choose Award</p> -->
+                <select name="award" id="drop-down" class="form-control form-control-award" required>
+                    <option disabled selected value>Select Award</option>
+                    <option value="student">Most Outstanding African President of the Year</option>
+                    <option value="job">Most Outstanding African Governor of the Year</option>
+                    <option value="learner">Most Outstanding African Traditional of the Year</option>
+                    <option value="preferNo">Most Creative Award</option>
+                    <option value="other">Leadership Award</option>
+                    <option value="other">CEO of the Year</option>
+                    <option value="other">Business Development Personality Award</option>
+                    <option value="other">Mentorship Award</option>
+                    <option value="other">Innovation Award</option>
+                    <option value="other">Diligence Award</option>
+                    <option value="other">Customer Service Award</option>
+                    <option value="other">Real Estate Company of the year Award</option>
+                    <option value="other">Real Estate Investment Company of the Year Award</option>
+                    <option value="other">Real Estate CEO of the Year Award</option>
+                    <option value="other">Outstanding Achievement Award</option>
+                    <option value="other">Community Leaders Award</option>
+                    <option value="other">Oil and Gas Company of the Year</option>
+                    <option value="other">Downstream Oil and Gas Company Award</option>
+                    <option value="other">Top Performing CEO of the Year Award</option>
+                    <option value="other">Milestone Award</option>
+                    <option value="other">Law Maker of the Year Award</option>
+                    <option value="other">State House Member of the Year Award</option>
+                    <option value="other">Speaker of the Year Award</option>
+                    <option value="other">Best Place to Work  Award</option>
+                    <option value="other">Best Private University of the Year Award</option>
+                    <option value="other">Best University of the Year Award</option>
+                    <option value="other">Agric Business Company of the Year Award</option>
+                    <option value="other">Farm of the Year Awards</option>
+                    <option value="other">Pharmaceutical Company of the Year Award</option>
+                    <option value="other">Corporate Social  Responsibility  Company of the year Award</option>
+                    <option value="other">Security Company of the year Award</option>
+                    <option value="other">Real Estate CEO of the year</option>
+                    <option value="other">Corporate Governance leadership award</option>
+                    <option value="other">Inspired Leadership Award</option>
+                    <option value="other">Most Outstanding University in Africa</option>
+                    <option value="other">Luxury Real Estate Company</option>
+                    <option value="other">Oil and Gas company of the year</option>
+                    <option value="other">Most Admired CEO of the Year</option>
+                    <option value="other">Building Manufacturer company of the year</option>
+                    <option value="other">Best Cement company of the year</option>
+                    <option value="other">Retail company of the year</option>
+                    <option value="other">Food manufacturing company of the year</option>
+                    <option value="other">Car company of the year</option>
+                    <option value="other">Banker of the year</option>
+                    <option value="other">Bank of the year</option>
+                    <option value="other">Fast food restaurant of the year</option>
+                    <option value="other">Security expert of the year</option>
+                    <option value="other">NGO of the year</option>
+                    <option value="other">Phenomenal Woman of the year award</option>
+                    <option value="other">Man of the year Award</option>
+                    <option value="other">Philanthropist of the year</option>
+                    <option value="other">Media personality of the year award</option>
+                    <option value="other">Musical Artist of the year</option>
+                    <option value="other">Content  creator of the year</option>
+                    <option value="other">Comedian of the year</option>
+                    <option value="other">Clergy man of the year</option>
+                    <option value="other">Government Agency of the year</option>
+                    <option value="other">Humanitarian personality of the year</option>
+                    <option value="other">E-commerce company of the year</option>
+                    <option value="other">Shipping company of the year</option>
+                    <option value="other">I.T. solutions Company of the year</option>
+                    <option value="other">Logistics company of the year</option>
+                    <option value="other">Micro finance bank of the year</option>
+                    <option value="other">Bank of the year</option>
+                    <option value="other">Insurance Company of the year</option>
+                    <option value="other">Fintech Company of the year</option>
+                    <option value="other">Telecoms company of the year</option>
+                    <option value="other">Telecom infrastructure Company of the year</option>
+                    <option value="other">Innovative Company of the year</option>
+                    <option value="other">Retail supermarket company of the year</option>
+                    <option value="other">Business solutions Company of the year</option>
+
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <p style="margin-bottom: 20px;">Why do you think He/She/Organization deserves this award?</p>
+                <!-- <textarea name="message" rows="8" placeholder="Message" required></textarea> -->
+
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..." cols="" rows=""></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="voter_name" id="voter_name" class="form-control" placeholder="Voter's Name" required>
+            </div>
+
+            <div class="form-group">
+                <input type="tel" name="voter_phone" id="voter_phone" class="form-control" placeholder="Voter's Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="voter_email" id="voter_email" class="form-control" placeholder="Voter's Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="hero-btn red-btn vote-btn">Send Vote</button>
+
+                <!-- <button type="submit" id="submit" class="submit-button">Submit</button> -->
+            </div>
+        </form>
+    </div>
+
+    
+    
+
+    <hr> 
+
+    <!---------------- footer ----------------->
+
+    <div class="footer">
+        <h4>Connect With Us</h4>
+        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus itaque dolorum odit magni quam voluptatibus, exercitationem qui <br> eveniet quod animi?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, commodi?</p> -->
+        <div class="icons">
+            <a href="https://web.facebook.com/profile.php?id=100063463995195" target="_blank">
+                <i class="lab la-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+            <i class="lab la-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/panafricanintlmagazine/?hl=en" target="_blank">
+                <i class="lab la-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCLpAvuzzq34mH5jC7usIWDg" target="_blank">
+                <i class="lab la-youtube"></i>
+            </a>
+        </div>
+        <p>Copyright &copy; 2022 All rights reserved | Made with <i class="lar la-heart"></i><a href="https://harckhan.netlify.app/" target="_blank" style="text-decoration: none; color: #f44336; font-weight: 500;"> by Harckhan</a></i></p>
+    </div>
+    
+
+
+
+    <a href="#" class="gotopbtn"><i class="las la-arrow-up"></i></a>
+
+
+    <script src="./js/scripts.js"></script>
+    
+</body>
+</html>
