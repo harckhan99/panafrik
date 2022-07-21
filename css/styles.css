@@ -1174,7 +1174,8 @@ hr{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f44336;
+  /* background: #f44336; */
+  background: #c1c1c1;
   border-radius: 50px;
 }
 
