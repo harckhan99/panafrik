@@ -95,13 +95,24 @@
                 </div>
             </div>
             <div class="contact-col">
-                <form action="form-handler.php" method="post">
+                <form action="https://formsubmit.co/28b3e8f781360a4d69768da57b8ecaa5" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
                     <input type="text" name="name" placeholder="Enter your name" required>
                     <input type="email" name="email" placeholder="Enter email address" required>
                     <input type="text" name="subject" placeholder="Enter your subject" required>
                     <textarea name="message" rows="8" placeholder="Message" required></textarea>
                     <button type="submit" class="hero-btn red-btn">Send Message</button>
                 </form>
+                <!-- <form action="https://formsubmit.co/archibongakan99@gmail.com" method="POST">
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <button type="submit">Send</button>
+               </form> -->
             </div>
         </div>
     </div>
@@ -142,6 +153,23 @@
 
 
     <script src="./js/scripts.js"></script>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "info@panafricanonline.com",
+                Password : "929879EC58298A5DFA8C0E323C2A38867C11",
+                To : 'archibongakan99@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            ); 
+        }
+    </script> -->
     
 </body>
 </html>
