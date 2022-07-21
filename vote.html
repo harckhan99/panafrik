@@ -61,7 +61,13 @@
     <!-------------- contact us ------------->
 
     <div class="form-page">
-        <form action="vote-handler.php" method="post" id="survey-form">
+        <form action="https://formsubmit.co/28b3e8f781360a4d69768da57b8ecaa5" method="POST" id="survey-form">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
             <div class="form-group">
                 <label id="name-label" for="name"></label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Nominees" required>
@@ -86,77 +92,76 @@
                 <!-- <p style="margin-bottom: 20px;">Choose Award</p> -->
                 <select name="award" id="drop-down" class="form-control form-control-award" required>
                     <option disabled selected value>Select Award</option>
-                    <option value="student">Most Outstanding African President of the Year</option>
-                    <option value="job">Most Outstanding African Governor of the Year</option>
-                    <option value="learner">Most Outstanding African Traditional of the Year</option>
-                    <option value="preferNo">Most Creative Award</option>
-                    <option value="other">Leadership Award</option>
-                    <option value="other">CEO of the Year</option>
-                    <option value="other">Business Development Personality Award</option>
-                    <option value="other">Mentorship Award</option>
-                    <option value="other">Innovation Award</option>
-                    <option value="other">Diligence Award</option>
-                    <option value="other">Customer Service Award</option>
-                    <option value="other">Real Estate Company of the year Award</option>
-                    <option value="other">Real Estate Investment Company of the Year Award</option>
-                    <option value="other">Real Estate CEO of the Year Award</option>
-                    <option value="other">Outstanding Achievement Award</option>
-                    <option value="other">Community Leaders Award</option>
-                    <option value="other">Oil and Gas Company of the Year</option>
-                    <option value="other">Downstream Oil and Gas Company Award</option>
-                    <option value="other">Top Performing CEO of the Year Award</option>
-                    <option value="other">Milestone Award</option>
-                    <option value="other">Law Maker of the Year Award</option>
-                    <option value="other">State House Member of the Year Award</option>
-                    <option value="other">Speaker of the Year Award</option>
-                    <option value="other">Best Place to Work  Award</option>
-                    <option value="other">Best Private University of the Year Award</option>
-                    <option value="other">Best University of the Year Award</option>
-                    <option value="other">Agric Business Company of the Year Award</option>
-                    <option value="other">Farm of the Year Awards</option>
-                    <option value="other">Pharmaceutical Company of the Year Award</option>
-                    <option value="other">Corporate Social  Responsibility  Company of the year Award</option>
-                    <option value="other">Security Company of the year Award</option>
-                    <option value="other">Real Estate CEO of the year</option>
-                    <option value="other">Corporate Governance leadership award</option>
-                    <option value="other">Inspired Leadership Award</option>
-                    <option value="other">Most Outstanding University in Africa</option>
-                    <option value="other">Luxury Real Estate Company</option>
-                    <option value="other">Oil and Gas company of the year</option>
-                    <option value="other">Most Admired CEO of the Year</option>
-                    <option value="other">Building Manufacturer company of the year</option>
-                    <option value="other">Best Cement company of the year</option>
-                    <option value="other">Retail company of the year</option>
-                    <option value="other">Food manufacturing company of the year</option>
-                    <option value="other">Car company of the year</option>
-                    <option value="other">Banker of the year</option>
-                    <option value="other">Bank of the year</option>
-                    <option value="other">Fast food restaurant of the year</option>
-                    <option value="other">Security expert of the year</option>
-                    <option value="other">NGO of the year</option>
-                    <option value="other">Phenomenal Woman of the year award</option>
-                    <option value="other">Man of the year Award</option>
-                    <option value="other">Philanthropist of the year</option>
-                    <option value="other">Media personality of the year award</option>
-                    <option value="other">Musical Artist of the year</option>
-                    <option value="other">Content  creator of the year</option>
-                    <option value="other">Comedian of the year</option>
-                    <option value="other">Clergy man of the year</option>
-                    <option value="other">Government Agency of the year</option>
-                    <option value="other">Humanitarian personality of the year</option>
-                    <option value="other">E-commerce company of the year</option>
-                    <option value="other">Shipping company of the year</option>
-                    <option value="other">I.T. solutions Company of the year</option>
-                    <option value="other">Logistics company of the year</option>
-                    <option value="other">Micro finance bank of the year</option>
-                    <option value="other">Bank of the year</option>
-                    <option value="other">Insurance Company of the year</option>
-                    <option value="other">Fintech Company of the year</option>
-                    <option value="other">Telecoms company of the year</option>
-                    <option value="other">Telecom infrastructure Company of the year</option>
-                    <option value="other">Innovative Company of the year</option>
-                    <option value="other">Retail supermarket company of the year</option>
-                    <option value="other">Business solutions Company of the year</option>
+                    <option value="Most Outstanding African President of the Year">Most Outstanding African President of the Year</option>
+                    <option value="Most Outstanding African Governor of the Year">Most Outstanding African Governor of the Year</option>
+                    <option value="Most Outstanding African Traditional of the Year">Most Outstanding African Traditional of the Year</option>
+                    <option value="Most Creative Award">Most Creative Award</option>
+                    <option value="Leadership Award">Leadership Award</option>
+                    <option value="CEO of the Year">CEO of the Year</option>
+                    <option value="Business Development Personality Award">Business Development Personality Award</option>
+                    <option value="Mentorship Award">Mentorship Award</option>
+                    <option value="Innovation Award">Innovation Award</option>
+                    <option value="Diligence Award">Diligence Award</option>
+                    <option value="Customer Service Award">Customer Service Award</option>
+                    <option value="Real Estate Company of the year Award">Real Estate Company of the year Award</option>
+                    <option value="Real Estate Investment Company of the Year Award">Real Estate Investment Company of the Year Award</option>
+                    <option value="Real Estate CEO of the Year Award">Real Estate CEO of the Year Award</option>
+                    <option value="Outstanding Achievement Award">Outstanding Achievement Award</option>
+                    <option value="Community Leaders Award">Community Leaders Award</option>
+                    <option value="Oil and Gas Company of the Year">Oil and Gas Company of the Year</option>
+                    <option value="Downstream Oil and Gas Company Award">Downstream Oil and Gas Company Award</option>
+                    <option value="Top Performing CEO of the Year Award">Top Performing CEO of the Year Award</option>
+                    <option value="Milestone Award">Milestone Award</option>
+                    <option value="Law Maker of the Year Award">Law Maker of the Year Award</option>
+                    <option value="State House Member of the Year Award">State House Member of the Year Award</option>
+                    <option value="Speaker of the Year Award">Speaker of the Year Award</option>
+                    <option value="Best Place to Work  Award">Best Place to Work  Award</option>
+                    <option value="Best Private University of the Year Award">Best Private University of the Year Award</option>
+                    <option value="Best University of the Year Award">Best University of the Year Award</option>
+                    <option value="Agric Business Company of the Year Award">Agric Business Company of the Year Award</option>
+                    <option value="Farm of the Year Awards">Farm of the Year Awards</option>
+                    <option value="Pharmaceutical Company of the Year Award">Pharmaceutical Company of the Year Award</option>
+                    <option value="Corporate Social  Responsibility  Company of the year Award">Corporate Social  Responsibility  Company of the year Award</option>
+                    <option value="Security Company of the year Award">Security Company of the year Award</option>
+                    <option value="Real Estate CEO of the year">Real Estate CEO of the year</option>
+                    <option value="Corporate Governance leadership award">Corporate Governance leadership award</option>
+                    <option value="Inspired Leadership Award">Inspired Leadership Award</option>
+                    <option value="Most Outstanding University in Africa">Most Outstanding University in Africa</option>
+                    <option value="Luxury Real Estate Company">Luxury Real Estate Company</option>
+                    <option value="Oil and Gas company of the year">Oil and Gas company of the year</option>
+                    <option value="Most Admired CEO of the Year">Most Admired CEO of the Year</option>
+                    <option value="Building Manufacturer company of the year">Building Manufacturer company of the year</option>
+                    <option value="Best Cement company of the year">Best Cement company of the year</option>
+                    <option value="Retail company of the year">Retail company of the year</option>
+                    <option value="Food manufacturing company of the year">Food manufacturing company of the year</option>
+                    <option value="Car company of the year">Car company of the year</option>
+                    <option value="Banker of the year">Banker of the year</option>
+                    <option value="Bank of the year">Bank of the year</option>
+                    <option value="Fast food restaurant of the year">Fast food restaurant of the year</option>
+                    <option value="Security expert of the year">Security expert of the year</option>
+                    <option value="NGO of the year">NGO of the year</option>
+                    <option value="Phenomenal Woman of the year award">Phenomenal woman of the year award</option>
+                    <option value="Man of the year Award">Man of the year Award</option>
+                    <option value="Philanthropist of the year">Philanthropist of the year</option>
+                    <option value="Media personality of the year award">Media personality of the year award</option>
+                    <option value="Musical Artist of the year">Musical Artist of the year</option>
+                    <option value="Content  creator of the year">Content  creator of the year</option>
+                    <option value="Comedian of the year">Comedian of the year</option>
+                    <option value="Clergy man of the year">Clergy man of the year</option>
+                    <option value="Government Agency of the year">Government agency of the year</option>
+                    <option value="Humanitarian personality of the year">Humanitarian personality of the year</option>
+                    <option value="E-commerce company of the year">E-commerce company of the year</option>
+                    <option value="Shipping company of the year">Shipping company of the year</option>
+                    <option value="I.T. solutions Company of the year">I.T. solutions Company of the year</option>
+                    <option value="Logistics company of the year">Logistics company of the year</option>
+                    <option value="Micro finance bank of the year">Micro finance bank of the year</option>
+                    <option value="Insurance Company of the year">Insurance Company of the year</option>
+                    <option value="Fintech Company of the year">Fintech Company of the year</option>
+                    <option value="Telecoms company of the year">Telecoms company of the year</option>
+                    <option value="Telecom infrastructure company of the year">Telecom infrastructure company of the year</option>
+                    <option value="Innovative company of the year">Innovative company of the year</option>
+                    <option value="Retail supermarket company of the year">Retail supermarket company of the year</option>
+                    <option value="Business solutions company of the year">Business solutions company of the year</option>
 
                 </select>
             </div>
